@@ -1,10 +1,10 @@
 import Navbar from "./navbar/Navbar";
 import HeroBanner from "./banner/Banner";
 import Skills from "./components/Skills";
-import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
+import ProjectShowcase from "./components/ProjectShowcase";
 
 function App() {
   return (
@@ -12,10 +12,10 @@ function App() {
       <HeroBanner />
       <Navbar />
       <AboutSection />
-      <SkillsSection />
       <Skills />
       <ProjectsSection />
       <ContactSection />
+      <ProjectShowcase />
     </>
   );
 }

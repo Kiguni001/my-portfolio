@@ -14,20 +14,25 @@ const skillCategories: SkillCategory[] = [
     title: "Languages",
     icon: "🧠",
     skills: [
-      { name: "HTML", score: 9 },
+      { name: "HTML", score: 8 },
       { name: "CSS", score: 8 },
       { name: "TypeScript", score: 7 },
-      { name: "Python", score: 6 },
-      { name: "Dutch", score: 5 },
+      { name: "Dart", score: 7 },
+      { name: "Java", score: 5 },
+      { name: "C#", score: 5 },
+      { name: "SQL", score: 6 },
+      { name: "PHP", score: 6 },
     ],
   },
   {
     title: "Libraries & Frameworks",
     icon: "📚",
     skills: [
-      { name: "React", score: 8 },
-      { name: "Tailwind CSS", score: 9 },
-      { name: "Next.js", score: 7 },
+      { name: "React", score: 7 },
+      { name: "Flutter", score: 7 },
+      { name: "Tailwind CSS", score: 8 },
+      { name: "Node.js", score: 6 },
+      { name: "Bootstrap", score: 7 },
     ],
   },
   {
@@ -36,22 +41,25 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: "MySQL", score: 6 },
       { name: "Firebase", score: 7 },
+      { name: "Oracle", score: 5 },
     ],
   },
   {
     title: "Tools & Others",
     icon: "🛠️",
     skills: [
-      { name: "Git & GitHub", score: 8 },
+      { name: "GitHub", score: 7 },
       { name: "Figma", score: 6 },
-      { name: "VS Code", score: 9 },
+      { name: "XAMPP", score: 7 },
+      { name: "Android Studio", score: 8 },
+      { name: "Unity", score: 6 },
     ],
   },
 ];
 
 const Skills = () => {
   return (
-    <section className="bg-[#0f0f0f] py-20 px-6 text-white" id="skills">
+    <section className="bg-[#0a0a0a] py-20 px-6 text-white" id="skills">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center text-[#8ab4f8]">
           🔧 Skills & Tools
@@ -66,7 +74,7 @@ const Skills = () => {
                 <span className="text-2xl">{category.icon}</span>
                 {category.title}
               </h3>
-              <ul className="space-y-4">
+              <ul className="space-y-1">
                 {category.skills.map((skill) => (
                   <li
                     key={skill.name}
