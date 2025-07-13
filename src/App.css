@@ -1,0 +1,42 @@
+/* Scrollable container */
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Each fullpage section */
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/* Navigation Dots */
+.dots-nav {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dots-nav li {
+  margin: 10px 0;
+}
+
+.dots-nav li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #aaa;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.dots-nav li a:hover {
+  background-color: orange;
+}
