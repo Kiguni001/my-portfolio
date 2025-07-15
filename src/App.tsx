@@ -5,6 +5,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import ProjectShowcase from "./components/ProjectShowcase";
+import SkillGrid from "./components/SkillGrid";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroBanner />
       <Navbar />
       <AboutSection />
+      <SkillGrid />
       <Skills />
       <ProjectsSection />
       <ProjectShowcase />
