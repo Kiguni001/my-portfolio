@@ -5,11 +5,26 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
 const imageData = [
-  { id: 1, src: "/images/project-1.jpg", text: "Lorem ipsum dolor sit amet 1" },
-  { id: 2, src: "/images/project-2.jpg", text: "Lorem ipsum dolor sit amet 2" },
-  { id: 3, src: "/images/project-3.jpg", text: "Lorem ipsum dolor sit amet 3" },
-  { id: 4, src: "/images/project-4.jpg", text: "Lorem ipsum dolor sit amet 4" },
-  { id: 5, src: "/images/project-5.jpg", text: "Lorem ipsum dolor sit amet 5" },
+  {
+    id: 1,
+    src: "/images/project-1.jpg",
+    text: `<span class="text-lg font-semibold">ผลงานไม่กำหนดรูปแบบ</span><br />ผลงานออกแบบที่ไม่มีเงื่อนไขกำหนด<br />เป็นการฝึกออกแบบตามความชอบ`,
+  },
+  {
+    id: 2,
+    src: "/images/project-2.jpg",
+    text: `<span class="text-lg font-semibold">ผลงานแบบมีกำหนดเงื่อนไข-1</span><br />เป็นผลงานฝึกออกแบบที่มีเงื่อนไขกำหนดจากลูกค้าจริง<br />และนำมาสร้างเป็นผลงานที่ใช้ได้จริง`,
+  },
+  {
+    id: 3,
+    src: "/images/project-3.jpg",
+    text: `<span class="text-lg font-semibold">ผลงานแบบมีกำหนดเงื่อนไข-2</span><br />เป็นผลงานฝึกออกแบบที่มีเงื่อนไขกำหนดจากลูกค้าจริง<br />และนำมาสร้างเป็นผลงานที่ใช้ได้จริง`,
+  },
+  {
+    id: 4,
+    src: "/images/project-4.jpg",
+    text: `<span class="text-lg font-semibold">ยังไม่ลงผลงาน</span>`,
+  },
 ];
 
 const ProjectShowcase = () => {
@@ -42,7 +57,7 @@ const ProjectShowcase = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full px-4 md:px-10 py-10 bg-[#111]">
+      <div className="flex justify-between items-center w-full px-4 md:px-10 py-10 bg-[#111] h-[78vh]">
         <button
           className="text-white bg-[#333] p-3 rounded-full hover:bg-[#555]"
           onClick={handlePrev}
@@ -59,7 +74,7 @@ const ProjectShowcase = () => {
               <div
                 key={image?.id}
                 onClick={isCenter ? handleClickCenterImage : undefined}
-                className={`relative cursor-pointer ${
+                className={`relative cursor-pointer group ${
                   isCenter
                     ? "w-[350px] h-[600px] scale-105 hover:scale-110 hover:shadow-xl"
                     : "w-[280px] h-[500px] scale-90 opacity-50"
@@ -68,14 +83,16 @@ const ProjectShowcase = () => {
                 <img
                   src={image?.src}
                   alt={`Project ${image?.id}`}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover object-top rounded-lg"
                 />
+
                 {isCenter && (
                   <>
-                    <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-t from-black to-transparent rounded-b-lg"></div>
-                    <div className="absolute bottom-3 left-3 text-white text-sm">
-                      {image?.text}
-                    </div>
+                    <div className="absolute bottom-0 left-0 w-full h-2/4 bg-gradient-to-t from-black to-transparent rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div
+                      className="absolute bottom-3 left-3 text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      dangerouslySetInnerHTML={{ __html: image?.text || "" }}
+                    ></div>
                   </>
                 )}
               </div>

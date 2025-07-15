@@ -14,8 +14,8 @@ function App() {
       <AboutSection />
       <Skills />
       <ProjectsSection />
-      <ContactSection />
       <ProjectShowcase />
+      <ContactSection />
     </>
   );
 }
