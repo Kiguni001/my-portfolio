@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section className="py-35 px-6 bg-gradient-to-b from-[#0a0a0a] to-[#0f0f0f] text-white">
+    <section className="py-35 px-6 bg-gradient-to-b from-[#0a0a0a] to-[#111111] text-white">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-[2%]">
         <div className="w-full md:w-[45%] flex-shrink-0">
           <img

@@ -57,7 +57,12 @@ const ProjectShowcase = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full px-4 md:px-10 py-10 bg-[#111] h-[78vh]">
+      <div className="text-center w-full px-4 md:px-10 py-10 bg-[#111] pb-0">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#8ab4f8] ">
+          ผลงานออกแบบเว็บไซต์
+        </h2>
+      </div>
+      <div className="flex justify-between items-center w-full px-4 md:px-10 py-10 bg-[#111] h-[90vh] pb-0">
         <button
           className="text-white bg-[#333] p-3 rounded-full hover:bg-[#555]"
           onClick={handlePrev}

@@ -1,3 +1,5 @@
+import React from "react";
+
 type Skill = {
   name: string;
   score: number;
@@ -6,13 +8,11 @@ type Skill = {
 type SkillCategory = {
   title: string;
   skills: Skill[];
-  icon: string;
 };
 
 const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
-    icon: "🧠",
     skills: [
       { name: "HTML", score: 8 },
       { name: "CSS", score: 8 },
@@ -26,7 +26,6 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Libraries & Frameworks",
-    icon: "📚",
     skills: [
       { name: "React", score: 7 },
       { name: "Flutter", score: 7 },
@@ -37,7 +36,6 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Databases",
-    icon: "🗄️",
     skills: [
       { name: "MySQL", score: 6 },
       { name: "Firebase", score: 7 },
@@ -46,7 +44,6 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Tools & Others",
-    icon: "🛠️",
     skills: [
       { name: "GitHub", score: 7 },
       { name: "Figma", score: 6 },
@@ -59,19 +56,15 @@ const skillCategories: SkillCategory[] = [
 
 const Skills = () => {
   return (
-    <section className="bg-[#0a0a0a] py-20 px-6 text-white" id="skills">
+    <section className="bg-[#111111] py-2 px-6 text-white" id="skills">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center text-[#8ab4f8]">
-          🔧 Skills & Tools
-        </h2>
         <div className="grid md:grid-cols-2 gap-10">
           {skillCategories.map((category) => (
             <div
               key={category.title}
               className="bg-[#121212] border border-[#2e5aac] p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300"
             >
-              <h3 className="text-xl font-semibold text-[#8ab4f8] mb-5 flex items-center gap-2">
-                <span className="text-2xl">{category.icon}</span>
+              <h3 className="text-xl font-semibold text-[#8ab4f8] mb-5">
                 {category.title}
               </h3>
               <ul className="space-y-1">

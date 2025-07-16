@@ -56,11 +56,11 @@ const skillCategories: SkillCategory[] = [
 
 const SkillGrid = () => {
   return (
-    <section className="bg-[#212121] text-white py-20 px-6" id="skills-grid">
-      <div className="max-w-6xl mx-auto space-y-20">
+    <section className="bg-[#111111] text-white py-10 px-6" id="skills-grid">
+      <div className="max-w-6xl mx-auto space-y-15">
         {skillCategories.map((category) => (
           <div key={category.title} className="text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#8ab4f8] mb-10">
+            <h2 className="text-xl md:text-2xl font-bold text-[#ffffff] mb-7">
               {category.title}
             </h2>
             <div className="flex justify-center">
@@ -68,9 +68,11 @@ const SkillGrid = () => {
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="w-43 bg-[#2a2a2a] border border-[#3a3a3a] rounded-xl p-4 shadow-md hover:shadow-[0_0_15px_#3b2f2f] transition duration-300"
+                    className="w-43 bg-[#121212] border border-[#2e5aac] rounded-xl p-4 shadow-md hover:shadow-blue-500/30 transition duration-300"
                   >
-                    <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
+                    <h3 className="text-lg font-semibold mb-2 text-white">
+                      {skill.name}
+                    </h3>
                     <p className="text-sm text-gray-400">{skill.score}/10</p>
                   </div>
                 ))}
