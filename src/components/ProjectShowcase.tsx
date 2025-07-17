@@ -22,7 +22,7 @@ const imageData = [
   },
   {
     id: 4,
-    src: "/images/project-4.jpg",
+    src: "/images/dummy.jpg",
     text: `<span class="text-lg font-semibold">ยังไม่ลงผลงาน</span>`,
   },
 ];
