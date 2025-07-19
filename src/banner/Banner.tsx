@@ -3,7 +3,7 @@ import "./Banner.css";
 
 const HeroBanner: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen">
+    <section id="home">
       <div className="hero-banner">
         <div className="content">
           <h1 className="typewriter">สวัสดี ฉันคือนักพัฒนาเว็บไซต์</h1>

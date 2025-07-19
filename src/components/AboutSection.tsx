@@ -6,11 +6,7 @@ const AboutSection = () => {
     >
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-[2%]">
         <div className="w-full md:w-[45%] flex-shrink-0">
-          <img
-            src="/images/me.png"
-            alt="Me"
-            className="w-full h-auto rounded-full shadow-lg"
-          />
+          <img src="/images/me.png" alt="Me" className="w-full h-auto   " />
         </div>
 
         <div className="text-center md:text-left">
