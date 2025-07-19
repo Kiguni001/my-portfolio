@@ -1,6 +1,4 @@
-// src/components/Navbar.tsx
 import React, { useEffect, useState } from "react";
-import "./Navbar.css"; // หรือใช้ Tailwind ก็ได้
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -14,21 +12,49 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={scrolled ? "navbar navbar-scrolled" : "navbar"}>
-      <ul className="nav-links">
-        <li>
-          <a href="#home">หน้าแรก</a>
-        </li>
-        <li>
-          <a href="#about">เกี่ยวกับฉัน</a>
-        </li>
-        <li>
-          <a href="#projects">ผลงาน</a>
-        </li>
-        <li>
-          <a href="#contact">ติดต่อ</a>
-        </li>
-      </ul>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+        scrolled
+          ? "bg-white/10 backdrop-blur-md shadow-md text-white"
+          : "bg-transparent text-white"
+      }`}
+    >
+      <div>
+        <ul className="flex justify-end pr-[3%] pl-0 pt-[1%] pb-[1%] gap-[5%]">
+          <li>
+            <a
+              href="#home"
+              className="text-inherit font-semibold tracking-wide hover:text-[#8ab4f8] transition-colors duration-200"
+            >
+              หน้าแรก
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              className="text-inherit font-semibold tracking-wide hover:text-[#8ab4f8] transition-colors duration-200"
+            >
+              เกี่ยวกับฉัน
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className="text-inherit font-semibold tracking-wide hover:text-[#8ab4f8] transition-colors duration-200"
+            >
+              ผลงาน
+            </a>
+          </li>
+          <li>
+            <a
+              href="#design"
+              className="text-inherit font-semibold tracking-wide hover:text-[#8ab4f8] transition-colors duration-200"
+            >
+              งานออกแบบ
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
