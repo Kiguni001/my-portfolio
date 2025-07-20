@@ -11,9 +11,12 @@ const highlights = [
 
 const WhyChooseMe = () => {
   return (
-    <section className="bg-[#111111] text-white py-10 px-6 pt-10" id="why-me">
+    <section
+      className="bg-[#111111] text-white py-5 px-5 pt-[3%] pb-[7%]"
+      id="why-me"
+    >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#8ab4f8] mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#9760ff] mb-10">
           ประสบการณ์การออกแบบเว็บไซต์
         </h2>
         <ul className="text-left space-y-4">

@@ -10,7 +10,7 @@ const SkillsSection = () => {
     <section className="relative bg-[#111111] py-10 px-6 text-white">
       {/* หัวข้อหลัก */}
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center text-[#8ab4f8]">
+        <h2 className="text-3xl font-bold mb-6 text-center text-[#ffffff]">
           Skills & Tools
         </h2>
 

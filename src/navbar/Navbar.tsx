@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div>
-        <ul className="flex justify-end pr-[3%] pl-0 pt-[1%] pb-[1%] gap-[5%]">
+        <ul className="flex justify-end pr-[3%] pl-0 pt-[10px] pb-[10px] gap-[5%]">
           <li>
             <a
               href="#home"
