@@ -7,7 +7,9 @@ const HeroBanner: React.FC = () => {
       <div className="hero-banner">
         <div className="content">
           <h1 className="typewriter">Portfolio</h1>
-          <p>React / TypeScript / Tailwind CSS</p>
+          <div className="text-banner">
+            <p>Frontend And Flutter Development</p>
+          </div>
         </div>
       </div>
     </section>

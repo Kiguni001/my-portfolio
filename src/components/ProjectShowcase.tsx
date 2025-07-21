@@ -58,7 +58,7 @@ const ProjectShowcase = () => {
   return (
     <section id="design">
       <div className="text-center w-full px-4 md:px-10 py-10 bg-[#111] pb-0">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#ffffff] ">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#13d2d5] ">
           ผลงานออกแบบเว็บไซต์
         </h2>
       </div>

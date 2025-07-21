@@ -68,7 +68,7 @@ const SkillGrid = () => {
                 {category.skills.map((skill) => (
                   <div
                     key={skill.name}
-                    className="w-43 bg-[#121212] border border-[#2e5aac] rounded-xl p-4 shadow-md hover:shadow-blue-500/30 transition duration-300"
+                    className="w-43 bg-[#121212] border border-[#13d2d5] rounded-xl p-4 shadow-md hover:shadow-blue-500/30 transition duration-300"
                   >
                     <h3 className="text-lg font-semibold mb-2 text-white">
                       {skill.name}

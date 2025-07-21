@@ -12,17 +12,17 @@ const highlights = [
 const WhyChooseMe = () => {
   return (
     <section
-      className="bg-[#111111] text-white py-5 px-5 pt-[3%] pb-[7%]"
+      className="bg-[#111111] text-white py-5 px-5 pt-[7%] pb-[7%]"
       id="why-me"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#9760ff] mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#ffffff] mb-10">
           ประสบการณ์การออกแบบเว็บไซต์
         </h2>
         <ul className="text-left space-y-4">
           {highlights.map((point, index) => (
             <li key={index} className="flex items-start gap-3">
-              <FiCheck className="text-[#8ab4f8] mt-1 text-xl shrink-0" />
+              <FiCheck className="text-[#15ff00] mt-1 text-xl shrink-0" />
               <span className="text-base md:text-lg">{point}</span>
             </li>
           ))}

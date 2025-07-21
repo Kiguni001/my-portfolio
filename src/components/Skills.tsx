@@ -62,9 +62,9 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-[#121212] border border-[#2e5aac] p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300"
+              className="bg-[#121212] border border-[#033e3f] p-6 rounded-2xl shadow-lg hover:shadow-[#000000]/30 transition duration-300 hover:-translate-y-1 hover:scale-[1.01] transform"
             >
-              <h3 className="text-xl font-semibold text-[#8ab4f8] mb-5">
+              <h3 className="text-xl font-semibold text-[#13d2d5] mb-5">
                 {category.title}
               </h3>
               <ul className="space-y-1">
@@ -76,7 +76,7 @@ const Skills = () => {
                     <span className="font-medium text-white w-28">
                       {skill.name}
                     </span>
-                    <div className="w-32 bg-[#2a2a2a] rounded-full overflow-hidden border border-[#2e5aac]">
+                    <div className="w-32 bg-[#2a2a2a] rounded-full overflow-hidden border border-[#000000]">
                       <div
                         className="h-3 rounded-full transition-all duration-500 bg-gradient-to-r from-[#2de300] to-[#ff7272]"
                         style={{ width: `${skill.score * 10}%` }}

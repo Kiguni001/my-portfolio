@@ -10,10 +10,10 @@ const SkillsSection = () => {
     <section className="relative bg-[#111111] py-10 px-6 text-white">
       {/* หัวข้อหลัก */}
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-center text-[#ffffff]">
-          Skills & Tools
+        <h2 className="text-4xl font-extrabold text-center text-[#13d2d5] mb-4">
+          ภาษาและเครื่องมือ
         </h2>
-
+        <div className="w-60 h-1 bg-[#13d2d5] mx-auto mb-10 rounded-full" />
         {/* ปุ่มแคปซูล */}
         <div className="flex justify-end mb-4">
           <div className="flex items-center bg-[#1a1a1a] rounded-full p-1 shadow-inner border border-[#111111]">

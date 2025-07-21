@@ -1,15 +1,20 @@
 .hero-banner {
   height: 80vh;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  background: url("/images/banner.jpg") center center / cover no-repeat;
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
+}
+
+.Photo {
+  max-width: 24%;
+  animation: slideFadeIn 1s ease-in-out;
 }
 
 .content {
   animation: slideFadeIn 1s ease-in-out;
+  padding-left: 19%;
 }
 
 .typewriter {
@@ -53,7 +58,7 @@
   }
 }
 
-p {
+.text-banner {
   margin-top: 1rem;
   font-size: 1.25rem;
   font-weight: 500;

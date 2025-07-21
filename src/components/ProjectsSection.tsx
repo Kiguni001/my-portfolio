@@ -140,14 +140,16 @@ const ProjectsSection = () => {
       id="projects"
       className="py-16 px-6 bg-[#333] dark:bg-[#111] text-white"
     >
-      <h2 className="text-3xl font-bold text-center mb-12 text-[#ffffff]">
-        Projects
+      <h2 className="text-4xl font-extrabold text-center text-[#13d2d5] mb-4">
+        ผลงานโปรเจค
       </h2>
+      <div className="w-40 h-1 bg-[#13d2d5] mx-auto mb-10 rounded-full" />
+
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-[#121212] dark:bg-[#181818] border border-[#2e5aac] rounded-2xl overflow-hidden shadow-md hover:shadow-blue-500/30 transition p-6"
+            className="bg-[#121212] dark:bg-[#181818] border border-[#0e3b1e] rounded-2xl overflow-hidden shadow-md hover:shadow-[#000000]/30 transition p-6"
           >
             {/* แสดงแท็ก */}
             <div className="flex flex-wrap gap-2 mb-3">
@@ -162,7 +164,7 @@ const ProjectsSection = () => {
               ))}
             </div>
 
-            <h3 className="text-xl font-semibold text-white mb-2">
+            <h3 className="text-xl font-semibold text-white mb-2 ">
               {project.title}
             </h3>
             <p className="text-sm text-[#cccccc] mb-4">{project.description}</p>

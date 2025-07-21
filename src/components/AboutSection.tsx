@@ -2,53 +2,56 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="py-35 px-6 bg-gradient-to-b from-[#0a0a0a] to-[#111111] text-white"
+      className="pt-[9%] pb-[9%] bg-gradient-to-b from-[#111111] to-[#111111] text-white"
     >
-      <div className=" max-w-[68%] mx-auto flex flex-col md:flex-row items-center md:items-start gap-[2%]">
-        <div className="w-full md:w-[45%] flex-shrink-0 ">
-          <img
-            src="/images/me.png"
-            alt="Me"
-            className="w-[90%] h-auto  justify-self-end
- "
-          />
-        </div>
+      <div className="max-w-5xl mx-auto px-6">
+        {/* หัวข้อ */}
+        <h2 className="text-4xl font-extrabold text-center text-[#13d2d5] mb-4">
+          เกี่ยวกับฉัน
+        </h2>
+        <div className="w-24 h-1 bg-[#13d2d5] mx-auto mb-10 rounded-full" />
 
-        <div className="max-w-4xl mx-auto text-base leading-7 tracking-wide pt-[2%]">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#ffffff] pt-[5%]">
-            เกี่ยวกับฉัน
-          </h2>
+        <div className="text-lg leading-8 tracking-wide space-y-6 text-gray-200">
           <p>
-            ผมเป็นโปรแกรมเมอร์ที่มีความชื่นชอบในการพัฒนา{" "}
-            <strong className="text-[#8ab4f8]">
+            ฉันชื่อปลื้ม หรือนาย{" "}
+            <span className="text-white font-semibold">ธีรเดช ใจเที่ยง</span>{" "}
+            ฉันมีความชื่นชอบในการพัฒนา{" "}
+            <strong className="text-[#13d2d5] bg-[#13d2d510] px-1 rounded">
               Frontend ทั้งด้าน Web และ Mobile Application
             </strong>{" "}
-            โดยเฉพาะการสร้างในส่วนของ UX/UI
+            โดยเฉพาะในด้าน UX/UI
           </p>
 
-          <p className="mt-4">
-            ผมมี <strong className="text-[#8ab4f8]">ประสบการณ์และรู้</strong>{" "}
+          <p>
+            ฉันมี <strong className="text-[#13d2d5]">ประสบการณ์</strong>{" "}
             ในการพัฒนาเว็บไซต์และแอปพลิเคชันด้วยเครื่องมือต่อไปนี้:
           </p>
 
-          <ul className="list-disc list-inside mt-4 ml-4">
-            <li>HTML, CSS, Tailwind CSS</li>
-            <li>React (Web Development)</li>
-            <li>Flutter และ Firebase (Mobile App Development)</li>
+          <ul className="list-none ml-2 space-y-2">
+            <li className="flex items-start gap-2">
+              <span className="text-[#13d2d5] mt-1">▹</span> HTML, CSS, Tailwind
+              CSS
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#13d2d5] mt-1">▹</span> React (Web
+              Development)
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#13d2d5] mt-1">▹</span> Flutter และ
+              Firebase (Mobile App)
+            </li>
           </ul>
 
-          <p className="mt-4">
-            นอกจากการพัฒนาแล้ว ผมยังสนใจและมีทักษะในด้าน{" "}
-            <strong className="text-[#8ab4f8]">การออกแบบ UX/UI</strong> โดยใช้{" "}
-            <span className="italic">Photoshop</span> เป็นเครื่องมือหลัก
-            และมีความรู้พื้นฐานในการออกแบบด้วย{" "}
-            <span className="italic">Figma</span> ในระดับเบื้องต้น
+          <p>
+            ฉันยังสนใจด้าน{" "}
+            <strong className="text-[#13d2d5]">การออกแบบ UX/UI</strong> โดยใช้{" "}
+            <span className="italic">Photoshop</span> และ{" "}
+            <span className="italic">Figma</span> ในระดับพื้นฐาน
           </p>
 
-          <p className="mt-4">
-            ผมพร้อมที่จะเรียนรู้และพัฒนาตนเองอยู่เสมอ
-            เพื่อให้สามารถสร้างผลงานที่ทั้งสวยงาม มีคุณภาพ
-            และตอบโจทย์ความต้องการของผู้ใช้
+          <p>
+            ฉันพร้อมที่จะเรียนรู้และพัฒนาตนเองอยู่เสมอ เพื่อสร้างผลงานที่ทั้ง
+            สวยงาม มีคุณภาพ ตอบโจทย์ผู้ใช้
           </p>
         </div>
       </div>
