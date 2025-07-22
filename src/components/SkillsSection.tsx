@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Skills from "./Skills"; // แบบแถบ progress
 import SkillGrid from "./SkillGrid"; // แบบกล่อง grid
 import { FiGrid, FiBarChart2 } from "react-icons/fi";
