@@ -1,24 +1,6 @@
-import React, { useEffect, useState } from "react";
-
 const Navbar: React.FC = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <nav
-      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
-        scrolled
-          ? "bg-white/10 backdrop-blur-md shadow-md text-white"
-          : "bg-transparent text-white"
-      }`}
-    >
+    <nav className="fixed top-0 w-full z-50 transition-colors duration-300 bg-white/10 backdrop-blur-md shadow-md text-white">
       <div>
         <ul className="flex justify-end pr-[3%] pl-0 pt-[10px] pb-[10px] gap-[5%]">
           <li>

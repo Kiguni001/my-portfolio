@@ -22,8 +22,8 @@ const imageData = [
   },
   {
     id: 4,
-    src: "/images/dummy.jpg",
-    text: `<span class="text-lg font-semibold">ยังไม่ลงผลงาน</span>`,
+    src: "/images/project-4.jpg",
+    text: `<span class="text-lg font-semibold">ผลงานไม่กำหนดรูปแบบ</span><br />ผลงานออกแบบเพื่อใช้งานส่วนตัว<br />ไม่มีการกำหนดรูปแบบ`,
   },
 ];
 

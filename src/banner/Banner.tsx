@@ -8,7 +8,7 @@ const HeroBanner: React.FC = () => {
         <div className="content">
           <h1 className="typewriter">Portfolio</h1>
           <div className="text-banner">
-            <p>Frontend And Flutter Development</p>
+            <p>Frontend Developer | Flutter Developer | UX/UI Designer</p>
           </div>
         </div>
       </div>
