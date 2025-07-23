@@ -25,9 +25,9 @@ const AboutSection = () => {
           {/* ขวา 70% */}
           <div className="w-full md:w-3/5 text-lg leading-8 tracking-wide space-y-6 text-gray-200">
             <p>
-              ฉันชื่อปลื้ม หรือนาย{" "}
+              ผมชื่อปลื้ม หรือนาย{" "}
               <span className="text-white font-semibold">ธีรเดช ใจเที่ยง</span>{" "}
-              ฉันมีความชื่นชอบในการพัฒนา{" "}
+              ผมมีความชื่นชอบในการพัฒนา{" "}
               <strong className="text-[#13d2d5] bg-[#13d2d510] px-1 rounded">
                 Frontend ทั้งด้าน Web และ Mobile Application
               </strong>{" "}
@@ -35,7 +35,7 @@ const AboutSection = () => {
             </p>
 
             <p>
-              ฉันมี <strong className="text-[#13d2d5]">ประสบการณ์</strong>{" "}
+              ผมมี <strong className="text-[#13d2d5]">ประสบการณ์</strong>{" "}
               ในการพัฒนาเว็บไซต์และแอปพลิเคชันด้วยเครื่องมือต่อไปนี้:
             </p>
 
@@ -55,14 +55,14 @@ const AboutSection = () => {
             </ul>
 
             <p>
-              ฉันยังสนใจด้าน{" "}
+              ผมยังสนใจด้าน{" "}
               <strong className="text-[#13d2d5]">การออกแบบ UX/UI</strong> โดยใช้{" "}
               <span className="italic">Photoshop</span> และ{" "}
               <span className="italic">Figma</span> ในระดับพื้นฐาน
             </p>
 
             <p>
-              ฉันพร้อมที่จะเรียนรู้และพัฒนาตนเองอยู่เสมอ เพื่อสร้างผลงานที่
+              ผมพร้อมที่จะเรียนรู้และพัฒนาตนเองอยู่เสมอ เพื่อสร้างผลงานที่
               สวยงามและตอบโจทย์ผู้ใช้
             </p>
           </div>
