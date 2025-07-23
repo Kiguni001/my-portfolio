@@ -140,9 +140,9 @@ const ProjectsSection = () => {
       className="py-16 px-6 bg-[#333] dark:bg-[#111] text-white"
     >
       <h2 className="text-4xl font-extrabold text-center text-[#13d2d5] mb-4">
-        ผลงานโปรเจค
+        ประสบการณ์ทำโปรเจค
       </h2>
-      <div className="w-40 h-1 bg-[#13d2d5] mx-auto mb-10 rounded-full" />
+      <div className="w-60 h-1 bg-[#13d2d5] mx-auto mb-10 rounded-full" />
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {projects.map((project) => (

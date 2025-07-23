@@ -56,9 +56,9 @@ const AboutSection = () => {
 
             <p>
               ผมยังสนใจด้าน{" "}
-              <strong className="text-[#13d2d5]">การออกแบบ UX/UI</strong> โดยใช้{" "}
-              <span className="italic">Photoshop</span> และ{" "}
-              <span className="italic">Figma</span> ในระดับพื้นฐาน
+              <strong className="text-[#13d2d5]">การออกแบบ UX/UI</strong> ผมใช้{" "}
+              <span className="italic">Photoshop ได้ในระดับดี</span>และ{" "}
+              <span className="italic">Figma</span> พื้นฐาน
             </p>
 
             <p>
